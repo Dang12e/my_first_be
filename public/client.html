@@ -9,9 +9,8 @@
   <body>
     <button onclick="SayHello()">Hello</button>
     <script>
-      const socket = io("http://localhost:3001");
-      socket.on("connection");
-      socket.on("respone", () => {
+      const socket = io();
+      socket.on("response", () => {
         alert("Server say Hello to you");
       });
       function SayHello() {
